@@ -1,0 +1,85 @@
+:root {
+    --offset: 18px;
+    --mobileSize: 375px;
+    --navbar-height: 64px;
+    --primary: #FFBD9E;
+    --transition: all 0.2s ease-out;
+    --fontFamily: "Montserrat",
+        -apple-system,
+        blinkmacsystemfont,
+        "Segoe UI",
+        roboto,
+        oxygen,
+        ubuntu,
+        cantarell,
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontFamily);
+    text-rendering: optimizelegibility;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: var(--mobileSize);
+    color: #000000;
+    background: #F0EDED;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 var(--offset);
+    box-sizing: content-box;
+}
+
+.pageContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 60px;
+}
+
+.itemsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
